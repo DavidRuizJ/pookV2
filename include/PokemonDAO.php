@@ -3,9 +3,9 @@ require_once("PokemonVO.php");
 
 class PokemonDAO{
     private $host = "localhost";
-    private $user = "sepherot_DemoAdmin";
-    private $password = "Pa73UiXbWG";
-    private $database = "sepherot_DemoDB";
+    private $user = "sepherot_davidr";
+    private $password = "Qk5NIIjGjFAF";
+    private $database = "sepherot_davidrBD";
     private $tabla = "T_Pokemon";
     private $cnx;
 
