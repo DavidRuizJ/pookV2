@@ -3,9 +3,9 @@ require_once("PokemonVO.php");
 
 class PokemonDAO{
     private $host = "localhost";
-    private $user = "sepherot_DemoAdmin";
-    private $password = "Pa73UiXbWG";
-    private $database = "sepherot_DemoDB";
+    private $user = "sepherot_diegoc";
+    private $password = "QjWMA?Pgt0tD";
+    private $database = "sepherot_diegocBD";
     private $tabla = "T_Pokemon";
     private $cnx;
 
@@ -22,13 +22,14 @@ class PokemonDAO{
             $vo->setNombre($fila["Pok_Nombre"]);
             $vo->setNivel($fila["Pok_Nivel"]);
             $vo->setTipo($fila["Pok_Tipo"]);
+            $vo->setImagen($fila["Pok_Imagen"]);
             $listadoVo[] = $vo;
         }
         return $listadoVo;
     }
 
     function insertar($vo){
-        $query = "INSERT INTO ".$this->tabla." (Pok_Nombre,Pok_Nivel,Pok_Tipo) VALUES('".$vo->getNombre()."',".$vo->getNivel().",'".$vo->getTipo()."') ";
+        $query = "INSERT INTO ".$this->tabla." (Pok_Nombre,Pok_Nivel,Pok_Tipo,Pok_Imagen) VALUES('".$vo->getNombre()."',".$vo->getNivel().",'".$vo->getTipo()."',".$vo->getImagen().")";
         $res = mysqli_query($this->cnx, $query);
         if($res){
             return True;
