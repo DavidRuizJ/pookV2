@@ -7,9 +7,7 @@ CREATE TABLE `T_Pokemon` (
   `Pok_Nombre` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
   `Pok_Tipo` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
   `Pok_Nivel` int(11) NOT NULL,
-  `Pok_Imagen` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
-
-
+  `Pok_Imagen` varchar(250) COLLATE utf8_spanish_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Quien es ese Pokemon';
 
 --

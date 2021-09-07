@@ -42,10 +42,12 @@ class PokemonDAO{
 }
 
 
-// $dao = new PokemonDAO();
-// $vo = new PokemonVO();
-// $vo->setNombre("Pikachu");
-// $dao->insertar($vo);
-//  print_r($dao->selectAll());
+//$dao = new PokemonDAO();
+//$vo = new PokemonVO();
+//$vo->setNombre("Pikachu");
+//$vo->setNivel(100);
+//$vo->setTipo("Electrico");
+//$dao->insertar($vo);
+//print_r($dao->selectAll());
 ?>
 
