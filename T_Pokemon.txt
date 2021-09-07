@@ -1,0 +1,28 @@
+--
+-- Estructura de tabla para la tabla `T_Pokemon`
+--
+
+CREATE TABLE `T_Pokemon` (
+  `ID_Pokemon` int(11) NOT NULL,
+  `Pok_Nombre` varchar(25) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Quien es ese Pokemon';
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `T_Pokemon`
+--
+ALTER TABLE `T_Pokemon`
+  ADD PRIMARY KEY (`ID_Pokemon`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `T_Pokemon`
+--
+ALTER TABLE `T_Pokemon`
+  MODIFY `ID_Pokemon` int(11) NOT NULL AUTO_INCREMENT;
