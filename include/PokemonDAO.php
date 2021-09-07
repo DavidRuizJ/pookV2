@@ -1,5 +1,5 @@
 <?php
-require_once("PokemonVO.php");
+require_once("include/PokemonVO.php");
 
 class PokemonDAO{
     private $host = "localhost";
