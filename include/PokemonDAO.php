@@ -22,13 +22,14 @@ class PokemonDAO{
             $vo->setNombre($fila["Pok_Nombre"]);
             $vo->setNivel($fila["Pok_Nivel"]);
             $vo->setTipo($fila["Pok_Tipo"]);
+            $vo->setImagen($fila["Pok_Imagen"]);
             $listadoVo[] = $vo;
         }
         return $listadoVo;
     }
 
     function insertar($vo){
-        $query = "INSERT INTO ".$this->tabla." (Pok_Nombre,Pok_Nivel,Pok_Tipo) VALUES('".$vo->getNombre()."',".$vo->getNivel().",'".$vo->getTipo()."') ";
+        $query = "INSERT INTO ".$this->tabla." (Pok_Nombre,Pok_Nivel,Pok_Tipo,Pok_Imagen) VALUES('".$vo->getNombre()."',".$vo->getNivel().",'".$vo->getTipo()."', '".$vo->getImagen()."') ";
         $res = mysqli_query($this->cnx, $query);
         if($res){
             return True;
